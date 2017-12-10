@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prices</title>
+	<link rel="stylesheet" type="text/css" href="styleprices.css">
+
+</head>
+
+<body>
+
+	<div id="logobar">
+		<a href="index.html"><h1>Insurance <b>Company</b></h1></a>
+	</div>
+
+	<div class="formWrapper">
+		<form name="insuranceForm" onsubmit="calculateInsurance(); return false;">
+			<label for="name_field"><span>Your Name:</span><input type="text" name="name_field" value="" /></label></br/>
+			<label for="age_field"><span>Age:</span><input type="number" name="age_field" value="" /></label><br/>
+			<label for="country_field"><span>Country:</span>
+				<select name="country_field">
+					<option value="germany">Germany</option>
+					<option value="austria">Austria</option>
+					<option value="italy">Italy</option>
+				</select>
+			</label><br/>
+			<label for="horsepower_field"><span>Horsepower:</span><input type="number" name="horsepower_field" value="" /></label></br>
+			<input type="submit" value="calculate"/>
+		</form>
+	</div>
+
+	<div id="calculation"></div>
+	<script type="text/javascript" src="scriptprices.js"></script>
+</body>
+</html>
